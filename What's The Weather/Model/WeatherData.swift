@@ -9,9 +9,9 @@ import Foundation
 */
 
 //Decodable means that it can decode itself from the external representation, in this case, the JSON representation
-struct WeatherData: Codable { //Codable is both Decodable and Encoodable protocols into one protocol
+struct WeatherData: Codable { //Codable is both Decodable and Encodable protocols into one protocol
     let name: String
-    let main: Main //main is an object in JSON data then we must make it into an object here aswell
+    let main: Main //main is an object in JSON data then we must make it into an object here as well
     let weather: [Weather] //JSON data has an array of weather data types,
 }
 
